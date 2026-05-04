@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Once your custom domain is live, update the host below:
+Sitemap: https://karvelisglobalexports.com/sitemap.xml

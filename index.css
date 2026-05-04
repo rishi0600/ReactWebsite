@@ -1,0 +1,90 @@
+/* Self-hosted fonts (no third-party CDN; no visit data leaks to Google) */
+@import "@fontsource/inter/300.css";
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/inter/700.css";
+@import "@fontsource/inter/800.css";
+@import "@fontsource/playfair-display/400.css";
+@import "@fontsource/playfair-display/600.css";
+@import "@fontsource/playfair-display/700.css";
+@import "@fontsource/playfair-display/800.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply font-sans text-navy-800 bg-white;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight;
+  }
+
+  ::selection {
+    @apply bg-gold-500 text-navy-900;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply max-w-7xl mx-auto px-6 sm:px-8 lg:px-12;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-gold-500 hover:bg-gold-600 text-navy-900 font-semibold rounded-md transition-all duration-300 shadow-lg shadow-gold-500/20 hover:shadow-xl hover:shadow-gold-500/30 hover:-translate-y-0.5;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-transparent border-2 border-white/80 text-white hover:bg-white hover:text-navy-900 font-semibold rounded-md transition-all duration-300;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-transparent border-2 border-navy-900 text-navy-900 hover:bg-navy-900 hover:text-white font-semibold rounded-md transition-all duration-300;
+  }
+
+  .section-eyebrow {
+    @apply inline-block text-xs sm:text-sm font-semibold tracking-[0.25em] uppercase text-gold-600 mb-4;
+  }
+
+  .section-title {
+    @apply font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-navy-900 leading-tight;
+  }
+
+  .section-subtitle {
+    @apply text-base sm:text-lg text-navy-600 max-w-2xl mt-5 leading-relaxed;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-500 overflow-hidden border border-navy-100/60;
+  }
+
+  .divider-line {
+    @apply h-px bg-gradient-to-r from-transparent via-navy-200 to-transparent;
+  }
+}
+
+/* Custom scrollbar for desktop */
+@media (min-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f0f4f8;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #334e68;
+    border-radius: 5px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #102a43;
+  }
+}
