@@ -1,0 +1,18 @@
+# Cloudflare Pages security headers — applied to every response.
+# Reference: https://developers.cloudflare.com/pages/configuration/headers/
+
+/*
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=(), payment=(), usb=()
+  Content-Security-Policy: default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; script-src 'self'; font-src 'self' data:; connect-src 'self' https://formspree.io; frame-ancestors 'none'; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'
+  X-XSS-Protection: 1; mode=block
+  X-DNS-Prefetch-Control: off
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Resource-Policy: same-site
+
+# Long-term cache for hashed build assets (Vite hashes them automatically)
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
