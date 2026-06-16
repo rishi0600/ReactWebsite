@@ -91,7 +91,7 @@ export default function Contact() {
               <ContactItem
                 icon={<Phone className="w-5 h-5" />}
                 label="Phone / WhatsApp"
-                lines={[contact.phone]}
+                lines={[contact.phone, contact.phone2].filter(Boolean)}
                 href={`tel:${contact.phone.replace(/\s/g, '')}`}
               />
               <ContactItem

@@ -2,6 +2,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Products from './components/Products';
+import MoreProductsAvailable from './components/MoreProductsAvailable';
 import WhyChooseUs from './components/WhyChooseUs';
 import Quality from './components/Quality';
 import Process from './components/Process';
@@ -20,6 +21,7 @@ export default function App() {
         <Hero />
         <About />
         <Products />
+        <MoreProductsAvailable />
         <WhyChooseUs />
         <Quality />
         <Process />

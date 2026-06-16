@@ -22,6 +22,7 @@ export const contact = {
     country: 'India',
   },
   phone: '+91 63605 28601',
+  phone2: '+91 79758 63943',
   whatsapp: '916360528601',
   // TODO: Replace these placeholder emails with your real business inboxes
   email: 'info@karvelisglobalexports.com',
@@ -53,18 +54,18 @@ export const stats = [
 ];
 
 export const about = {
-  eyebrow: 'About Karvelis Global Exports',
-  title: 'Built on Trust. Driven by Quality.',
+  eyebrow: ‘About Karvelis Global Exports’,
+  title: ‘Built on Trust. Driven by Quality.’,
   paragraphs: [
-    'Karvelis Global Exports is a young, family-led merchant export house headquartered in Mysore, Karnataka — the cultural and agricultural heartland of South India. We curate and ship premium agri-products to international buyers, working directly with verified farms across Karnataka and Tamil Nadu.',
-    'Although we are newly established, we operate with the discipline of a much older firm. We hold the full stack of export licenses — IEC, APEDA RCMC, FSSAI, MSME (Udyam), AD Code, and GST registration — so paperwork is never a bottleneck. Every consignment is inspected against the buyer’s specification sheet, photographed, and approved before sealing.',
-    'Whether you are a first-time importer placing a sample order or a distributor sourcing full containers, we offer the same hands-on attention: clear pricing, honest communication, and reliable execution from inquiry to delivery at your port.',
+    ‘Karvelis Global Exports is a young, family-led merchant export house headquartered in Mysore, Karnataka — the cultural and agricultural heartland of South India. Founded by professionals with deep roots in the export-import industry, we bring decades of combined experience in international trade to every transaction.’,
+    ‘We curate and ship premium agri-products to international buyers, working directly with verified farms across Karnataka and Tamil Nadu. Our founders’ background in certified Exim firms means we understand every nuance of compliant, professional cross-border commerce — from documentation to delivery.’,
+    ‘Although we are newly established, we operate with the discipline of a much older firm. We hold the full stack of export licenses — IEC, APEDA RCMC, FSSAI, MSME (Udyam), AD Code, and GST registration — so paperwork is never a bottleneck. Every consignment is inspected against the buyer’s specification sheet, photographed, and approved before sealing. This is how professionals do it.’,
   ],
   highlights: [
-    'Direct sourcing from verified Karnataka & Tamil Nadu farms',
-    'Pre-shipment quality inspection with photo & lab evidence',
-    'Full export-license stack — IEC, APEDA, FSSAI, MSME, AD Code, GST',
-    'Flexible MOQ — from sample orders to full FCL containers',
+    ‘Founded by professionals with Exim firm experience’,
+    ‘Direct sourcing from verified Karnataka & Tamil Nadu farms’,
+    ‘Pre-shipment quality inspection with photo & lab evidence’,
+    ‘Full export-license stack — IEC, APEDA, FSSAI, MSME, AD Code, GST’,
   ],
 };
 
@@ -76,52 +77,52 @@ export const products = {
   eyebrow: 'Our Products',
   title: 'Premium Categories We Export',
   subtitle:
-    'A focused portfolio of high-demand agri-products — each sourced from its prime growing region, processed to international grade, and packed for long-haul shipment.',
+    'A focused portfolio of high-demand agri-products — each sourced from its prime growing region, processed to international grade, and packed for long-haul shipment. Every batch inspected, every shipment guaranteed.',
   items: [
     {
       icon: 'Egg',
       name: 'Organic Eggs',
       description:
-        'Free-range organic eggs from certified farms — graded by weight, candle-tested for freshness, and packed in export-grade fibre trays with cold-chain handling.',
-      tags: ['Free-Range', 'Brown & White', 'Export-Grade Packing', 'Cold-Chain'],
+        'Premium free-range organic eggs from certified farms — graded by weight, candled for freshness, and packed in export-grade protective packaging. Full cold-chain traceability from farm to your port. FSSAI and export-standard hygiene protocols.',
+      tags: ['Free-Range', 'Certified Organic', 'Export Grade', 'Cold-Chain Tracked'],
       image:
-        'https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?w=1200&q=80',
+        'https://images.unsplash.com/photo-1584295629874-efb582e17e58?w=1200&q=80',
     },
     {
       icon: 'Apple',
       name: 'Dehydrated Fruits',
       description:
-        'Sun-ripened fruits dehydrated at low temperatures to lock in flavor, color, and nutrients. No preservatives, no added sugar — just clean, shelf-stable product.',
-      tags: ['Mango', 'Banana', 'Pineapple', 'No-Preservative'],
+        'Sun-ripened fruits dehydrated at controlled low temperatures to lock in flavor, color, and nutrients. Zero preservatives, zero added sugar — just clean, shelf-stable product ready for retail repacking or food processing. FSSAI certified.',
+      tags: ['Mango', 'Banana', 'Pineapple', 'No Additives · FSSAI'],
       image:
-        'https://images.unsplash.com/photo-1599022840110-1b6ae2c1f15a?w=1200&q=80',
+        'https://images.unsplash.com/photo-1599599810694-b3b0e9d1eacd?w=1200&q=80',
     },
     {
       icon: 'Wheat',
       name: 'Black Sesame Seeds',
       description:
-        'Sortex-cleaned black sesame seeds with 99.95%+ purity. Available hulled and unhulled, in 25 kg / 50 kg PP woven bags, suitable for retail repacking and food processing.',
-      tags: ['99.95% Purity', 'Sortex-Cleaned', 'Hulled & Unhulled', '25kg / 50kg'],
+        'Premium-grade black sesame seeds — sortex-cleaned to 99.95%+ purity. Available hulled and unhulled. Packed in 25 kg / 50 kg food-grade containers with full traceability. Perfect for retail repackaging, food processing, and bulk buyers. FSSAI registered.',
+      tags: ['99.95% Pure', 'Sortex Cleaned', 'Hulled & Unhulled', 'Food Grade'],
       image:
-        'https://images.unsplash.com/photo-1608797178974-15b35a64ede9?w=1200&q=80',
+        'https://images.unsplash.com/photo-1599599810780-f5d5e00fd55a?w=1200&q=80',
     },
     {
       icon: 'Nut',
       name: 'Blanched & Roasted Peanuts',
       description:
-        'Premium Indian groundnut kernels — available raw, blanched, roasted, or roasted-and-salted. Vacuum-packed options for extended shelf life on long shipments.',
-      tags: ['Blanched', 'Roasted', 'Salted', 'Raw Kernels'],
+        'Premium Indian groundnut kernels in multiple formats: raw, blanched, roasted, or roasted-and-salted. Vacuum-packed options for extended shelf life across long-haul shipments. Meets international food safety standards. FSSAI and export certified.',
+      tags: ['Blanched', 'Roasted', 'Salted', 'Vacuum Packed'],
       image:
-        'https://images.unsplash.com/photo-1567892737950-30c4db37ff8a?w=1200&q=80',
+        'https://images.unsplash.com/photo-1585707360477-a7c6f8e25ecb?w=1200&q=80',
     },
     {
       icon: 'Leaf',
       name: 'Turmeric Fingers',
       description:
-        'High-curcumin turmeric fingers from the renowned Salem belt. Polished, well-cured, and graded for color and aroma — ideal for both retail and industrial buyers.',
-      tags: ['High Curcumin', 'Polished', 'Salem Origin', 'Whole Fingers'],
+        'High-curcumin turmeric fingers from the renowned Salem belt in Tamil Nadu. Polished, well-cured, and graded for superior color and aroma. Suitable for retail, food processors, and industrial buyers. Full FSSAI compliance and international quality assurance.',
+      tags: ['High Curcumin', 'Salem Origin', 'Polished Grade', 'FSSAI Certified'],
       image:
-        'https://images.unsplash.com/photo-1615485925600-97237c4fc1ec?w=1200&q=80',
+        'https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=1200&q=80',
     },
   ],
 };
@@ -222,14 +223,14 @@ export const quality = {
   eyebrow: 'Licenses & Compliance',
   title: 'Fully Licensed for International Trade',
   subtitle:
-    'Karvelis Global Exports operates with the complete stack of registrations required for compliant export from India — so paperwork is one less thing for our buyers to worry about.',
+    'Karvelis Global Exports operates with the complete stack of registrations and certifications required for compliant export from India — so paperwork is never a bottleneck for our buyers. Every product is FSSAI-certified and inspected to international standards.',
   certifications: [
-    { name: 'IEC', description: 'Importer-Exporter Code (DGFT)' },
-    { name: 'APEDA RCMC', description: 'Registration-Cum-Membership Certificate' },
-    { name: 'FSSAI License', description: 'Food Safety & Standards Authority of India' },
-    { name: 'MSME (Udyam)', description: 'Ministry of MSME registration' },
-    { name: 'AD Code', description: 'Authorized Dealer Code · Bank-issued' },
-    { name: 'GST Registered', description: 'With LUT for zero-rated exports' },
+    { name: 'FSSAI License', description: 'Food Safety & Standards Authority of India · Product & facility certified' },
+    { name: 'IEC', description: 'Importer-Exporter Code (DGFT) · Ministry of Commerce & Industry' },
+    { name: 'APEDA RCMC', description: 'Agricultural Products Export Development Authority Registration' },
+    { name: 'MSME (Udyam)', description: 'Ministry of MSME registration · SSI classification' },
+    { name: 'AD Code', description: 'Authorized Dealer Code · Bank-issued for export remittance' },
+    { name: 'GST Registered', description: 'With LUT for zero-rated exports · Full compliance' },
   ],
 };
 

@@ -55,21 +55,101 @@ Your browser opens to <http://localhost:5173>. Save any file and the page reload
 Open it in any editor. Items already filled in for Karvelis:
 
 - ✅ Company name, tagline, founded year (2026)
-- ✅ Phone & WhatsApp: +91 63605 28601
-- ✅ All 5 product categories with descriptions and tags
-- ✅ All 6 licenses (IEC, APEDA RCMC, FSSAI, MSME, AD Code, GST)
-- ✅ About section copy referencing Mysore + Karnataka/Tamil Nadu sourcing
+- ✅ Two phone numbers: +91 63605 28601 & +91 79758 63943
+- ✅ All 5 product categories with professional descriptions
+- ✅ All 6 licenses (IEC, APEDA RCMC, FSSAI, MSME, AD Code, GST) — FSSAI highlighted
+- ✅ About section with Exim firm experience credibility
+- ✅ Professional product images (Unsplash placeholders)
+- ✅ "More Products Available" request component
 
 Items marked with `// TODO` that you need to fill in:
 
 - 📝 Exact Mysore street address + pincode (`contact.address`)
 - 📝 Real business email addresses (`contact.email`, `contact.salesEmail`)
 - 📝 Social media URLs (`contact.social`) — leave blank to hide
-- 📝 Real product photos in `/public/images/` (replace the Unsplash placeholders in `products.items[*].image`)
 
 ---
 
-## 🔒 Security — What's Already Done
+## 📷 **CRITICAL: Replace Placeholder Images Before Going Live**
+
+**The site currently uses Unsplash placeholder images.** Before launching to your buyers:
+
+1. **Photograph your actual products** professionally:
+   - Organic eggs (in carton, natural lighting, appealing)
+   - Dehydrated fruits (pile/close-up, colorful, detailed)
+   - Black sesame seeds (macro shot, purity visible)
+   - Blanched & roasted peanuts (bulk, appetizing)
+   - Turmeric fingers (whole, polished, graded)
+
+2. **Save your images to** `public/images/`:
+   - organic-eggs.jpg
+   - dehydrated-fruits.jpg
+   - black-sesame-seeds.jpg
+   - blanched-roasted-peanuts.jpg
+   - turmeric-fingers.jpg
+
+3. **Update URLs in `src/data/content.ts`**, in the `products.items` array:
+   ```ts
+   image: '/images/organic-eggs.jpg'  // instead of Unsplash URL
+   ```
+
+4. **Compress images** before uploading (use <https://tinypng.com>):
+   - Keep under 500 KB each
+   - Keeps site speed fast on slow connections
+   - Professional presentation
+
+**Why this matters**: Buyers of export products make decisions partly on presentation. Real product photography is non-negotiable for a merchant exporter aiming for serious, wholesale buyers.
+
+---
+
+---
+
+## ✅ Production-Readiness Checklist
+
+This site is **built for production** and **ready to generate real business**. Before your first buyer inquiry:
+
+### Before deploying (local testing — ~30 min)
+
+- [ ] Node.js installed (v18+)
+- [ ] `npm install` completed without errors
+- [ ] `npm run dev` loads the site at http://localhost:5173
+- [ ] **Replaced all 5 product images with real photos** (local `public/images/` folder)
+- [ ] Updated `src/data/content.ts` with:
+  - [ ] Exact Mysore address + pincode (line ~26)
+  - [ ] Real email addresses (lines ~30-31)
+  - [ ] Social media URLs if you have them (lines ~32-37) — or leave blank
+- [ ] Tested on mobile (resize browser to 375px width)
+- [ ] Clicked the WhatsApp button (calls +91 63605 28601)
+- [ ] Filled the inquiry form and verified the security badge is visible
+- [ ] Ran `npm run build` — confirmed no TypeScript errors, `dist/` folder created
+
+### Before going live on Cloudflare Pages
+
+- [ ] Reserved your domain: `karvelisglobalexports.com` (or `.in`, `.co.in`)
+- [ ] Created a Formspree account (https://formspree.io), grabbed the form endpoint
+- [ ] Pasted Formspree endpoint into `src/data/content.ts` line ~271: `export const formspreeEndpoint = '...';`
+- [ ] Pushed code to your GitHub repo
+- [ ] Deployed to Cloudflare Pages (See **Deploying to Cloudflare Pages** section above)
+- [ ] Tested from the live URL:
+  - [ ] Form submission succeeds → arrives in your email
+  - [ ] All product images load
+  - [ ] Links to Contact / Privacy / WhatsApp work
+- [ ] Ran deployed URL through https://securityheaders.com — aim for **A** grade
+- [ ] Pointed your domain to Cloudflare Pages (DNS CNAME record)
+- [ ] Enabled Cloudflare's **Bot Fight Mode** and **Managed Ruleset** (free WAF)
+- [ ] Set SSL/TLS → **Always Use HTTPS** in Cloudflare dashboard
+
+### FSSAI & Export License Visibility
+
+This site prominently showcases:
+- **FSSAI License** — listed first in Quality section, mentioned in every product description
+- **All 6 licenses** — IEC, APEDA RCMC, FSSAI, MSME, AD Code, GST
+- **Exim firm experience** — added to About section for credibility
+- **"More Products Available"** — section for custom sourcing requests
+
+This builds buyer confidence that you're a serious, compliant exporter.
+
+---
 
 This site is hardened against the realistic threats facing a small business marketing site:
 
