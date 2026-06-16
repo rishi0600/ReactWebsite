@@ -9,6 +9,7 @@ import {
   AlertCircle,
 } from 'lucide-react';
 import { contact, formspreeEndpoint, products } from '../data/content';
+import InquiryOptions from './InquiryOptions';
 import SecurityBadge from './SecurityBadge';
 
 type Status = 'idle' | 'sending' | 'success' | 'error';
@@ -233,6 +234,8 @@ export default function Contact() {
               )}
 
               <SecurityBadge />
+
+              <InquiryOptions />
             </form>
           </div>
         </div>
