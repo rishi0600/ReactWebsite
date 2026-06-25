@@ -91,9 +91,10 @@ export default function Contact() {
               />
               <ContactItem
                 icon={<Phone className="w-5 h-5" />}
-                label="Phone / WhatsApp"
-                lines={[contact.phone, contact.phone2].filter(Boolean)}
-                href={`tel:${contact.phone.replace(/\s/g, '')}`}
+                label="WhatsApp"
+                lines={[contact.phone]}
+                href={`https://wa.me/${contact.whatsapp}`}
+                target="_blank"
               />
               <ContactItem
                 icon={<Mail className="w-5 h-5" />}
@@ -249,11 +250,13 @@ function ContactItem({
   label,
   lines,
   href,
+  target,
 }: {
   icon: React.ReactNode;
   label: string;
   lines: string[];
   href?: string;
+  target?: string;
 }) {
   const content = (
     <div className="flex items-start gap-4">
@@ -273,7 +276,12 @@ function ContactItem({
     </div>
   );
   return href ? (
-    <a href={href} className="block hover:text-gold-400 transition-colors">
+    <a
+      href={href}
+      target={target}
+      rel={target === '_blank' ? 'noopener noreferrer' : undefined}
+      className="block hover:text-gold-400 transition-colors"
+    >
       {content}
     </a>
   ) : (

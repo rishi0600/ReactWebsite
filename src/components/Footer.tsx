@@ -88,18 +88,15 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-gold-400 flex-shrink-0" />
-                <a href={`tel:${contact.phone.replace(/\s/g, '')}`} className="hover:text-gold-400 transition-colors">
+                <a
+                  href={`https://wa.me/${contact.whatsapp}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-gold-400 transition-colors"
+                >
                   {contact.phone}
                 </a>
               </li>
-              {contact.phone2 && (
-                <li className="flex items-center gap-2.5">
-                  <Phone className="w-4 h-4 text-gold-400 flex-shrink-0" />
-                  <a href={`tel:${contact.phone2.replace(/\s/g, '')}`} className="hover:text-gold-400 transition-colors">
-                    {contact.phone2}
-                  </a>
-                </li>
-              )}
               <li className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-gold-400 flex-shrink-0" />
                 <a href={`mailto:${contact.salesEmail}`} className="hover:text-gold-400 transition-colors">
