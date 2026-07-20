@@ -71,14 +71,14 @@ export const products = {
   items: [
     {
       icon: 'Egg',
-      name: 'Organic Eggs',
-      description: 'Premium free-range organic eggs from certified farms — graded by weight, candled for freshness, and packed in export-grade protective packaging. Full cold-chain traceability from farm to your port. FSSAI and export-standard hygiene protocols.',
+      name: 'Premium Eggs',
+      description: 'Premium eggs available in export-ready variants including organic eggs, Omega-3 enriched eggs, Vitamin D3 enriched eggs, nutritionally enriched eggs, free-range eggs, and specialty eggs (custom required) — sourced from certified farms, graded for quality, and packed under hygienic export standards.',
       tags: ['Free-Range', 'Certified Organic', 'Export Grade', 'Cold-Chain Tracked'],
       image: '/images/organicegg.jpeg',
     },
     {
       icon: 'Apple',
-      name: 'Dehydrated Fruits',
+      name: 'Dehydrated Fruits and Vegetables',
       description: 'Sun-ripened fruits dehydrated at controlled low temperatures to lock in flavor, color, and nutrients. Zero preservatives, zero added sugar — just clean, shelf-stable product ready for retail repacking or food processing. FSSAI certified.',
       tags: ['Mango', 'Banana', 'Pineapple', 'No Additives - FSSAI'],
       image: '/images/dryfruits.avif',
